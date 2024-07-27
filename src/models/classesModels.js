@@ -1,4 +1,4 @@
-const { dbConnect } = require('../config/mysql');
+const { dbConnect } = require('../app');
 
 const createClass = (classData, callback) => {
     const connection = dbConnect();

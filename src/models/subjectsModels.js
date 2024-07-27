@@ -1,4 +1,4 @@
-const { dbConnect } = require('../config/mysql');
+const { dbConnect } = require('../app');
 
 const createSubject = (subjectData, callback) => {
     const connection = dbConnect();

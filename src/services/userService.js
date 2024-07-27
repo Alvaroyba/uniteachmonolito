@@ -1,5 +1,5 @@
 const mysql = require('mysql2');
-const { dbConnect } = require('../config/mysql');
+const { dbConnect } = require('../app');
 
 
 function fieldsExist(connection ,field, value, callback) {
