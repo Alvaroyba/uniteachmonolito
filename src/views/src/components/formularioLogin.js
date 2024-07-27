@@ -3,7 +3,6 @@ import { API_URL } from '../auth/constans';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../auth/authProvider';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/formularioLogin.css';
 
 export const FormularioLogin = ({ onLoginSuccess }) => {
   const [Username, setUsername] = useState('');

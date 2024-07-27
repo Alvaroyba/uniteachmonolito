@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../Assest/Logo.png';
 import InfoIcon from '@mui/icons-material/Info';
 import HomeIcon from '@mui/icons-material/Home';
 import LoginIcon from '@mui/icons-material/Login';
@@ -9,7 +8,7 @@ import { HiOutlineMenu } from 'react-icons/hi';
 import { Drawer, ListItem, ListItemIcon, ListItemText, Box, List, Avatar, InputBase, Menu, MenuItem } from '@mui/material';
 import { useAuth } from '../auth/authProvider';
 import { useNavigate } from 'react-router-dom';
-import '../styles/navbarHome.css';
+
 
 
 export const Navbar = () => {
@@ -55,7 +54,7 @@ export const Navbar = () => {
         <div className="navbar-home">
           <nav>
             <div className="nav-logo-container">
-              <Link to="/home"><img src={Logo} alt='Logo' /></Link>
+              <Link to="/home"><img src="Logo" alt='Logo' /></Link>
             </div>
             <div className="navbar-links-container">
               {menuOptions.map((option, index) => (
@@ -124,7 +123,7 @@ export const Navbar = () => {
     <div>
       <nav>
         <div className="nav-logo-container">
-          <Link to="/"><img src={Logo} alt='' /></Link>
+          <Link to="/"><img src="Logo" alt='' /></Link>
         </div>
         <div className="navbar-links-container">
           {menuOptions.map((option, index) => (

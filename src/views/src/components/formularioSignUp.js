@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { API_URL } from "../auth/constans";
 import { useNavigate } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/formularioSignUp.css';
 
 export const FormularioSignUp = () => {
   const [Username, setUsername] = useState('');

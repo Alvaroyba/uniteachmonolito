@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import '../styles/landingPage.css';
 import TestimonialCard from '../components/TestimonialCard'; // Asegúrate de que la ruta es correcta
 import Navbar from '../components/navbar'; // Asegúrate de que la ruta es correcta
 

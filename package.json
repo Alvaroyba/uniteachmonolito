@@ -4,10 +4,10 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node src/app.js && npm run start src/views",
     "dev": "nodemon src/app.js",
     "build": "npm run build:frontend && npm run build:backend",
-    "build:frontend": "cd src/views && npm run build",
+    "build:frontend": "cd src/views && npm run start",
     "build:backend": "echo 'No backend build step needed'",
     "test": "mocha src/tests/**/*.test.js",
     "lint": "eslint src/**/*.js"
@@ -31,6 +31,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
+    "path": "^0.12.7",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
